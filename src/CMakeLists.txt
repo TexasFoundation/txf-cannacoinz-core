@@ -75,6 +75,7 @@ endif ()
 
 add_dependencies(Rpc version)
 add_dependencies(Daemon version)
+add_dependencies(Miner version)
 add_dependencies(SimpleWallet version)
 add_dependencies(PaymentGateService version)
 add_dependencies(P2P version)
