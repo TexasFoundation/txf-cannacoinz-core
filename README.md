@@ -1,4 +1,5 @@
-## Building UltraNote Infinity
+## Building Texas Foundation Coin CannaCoinZ
+Based on UltraNote Infinity
 
 On Apple or Linux and can't get readline installed? Run cmake with `cmake .. -DFORCE_READLINE=FALSE` to disable readline support.
 
@@ -20,8 +21,8 @@ Run these commands:
 ```
 cd ~
 sudo apt-get install build-essential git cmake libboost-all-dev libreadline-dev
-git clone https://github.com/xun-project/ultranotei-core.git
-cd ultranotei-core
+git clone https://github.com/TexasFoundation/txf-cannacoinz-core.git
+cd txf-cannacoinz-core
 mkdir build
 cd build
 cmake ..
@@ -29,7 +30,7 @@ cd ..
 make
 ```
 
-The resulting executables can be found in `ultranotei-core/build/release/src`.
+The resulting executables can be found in `txf-cannacoinz-core/build/release/src`.
 
 #### Advanced options:
 
@@ -51,12 +52,12 @@ Building with Clang: it may be possible to use Clang instead of GCC, but this ma
 ##### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2019'.
-- `cd ultranotei-core`
+- `cd txf-cannacoinz-core`
 - `mkdir build`
 - `cd build`
 -  Set the PATH variable for cmake: ie. `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
 - `cmake -G "Visual Studio 16 2019" .. -DBOOST_ROOT=C:/local/boost_1_65_1` (Or your boost installed dir.)
-- `MSBuild UltraNoteI.sln /p:Configuration=Release /m`
+- `MSBuild CannaCoinZ.sln /p:Configuration=Release /m`
 - If all went well, it will complete successfully, and you will find all your binaries in the '..\build\src\Release' directory.
 - Additionally, a `.sln` file will have been created in the `build` directory. If you wish to open the project in Visual Studio with this, you can.
 
@@ -65,12 +66,12 @@ Building with Clang: it may be possible to use Clang instead of GCC, but this ma
 ```
 brew install git cmake boost rocksdb readline
 brew link --force readline
-git clone https://github.com/xun-project/ultranotei-core.git
-cd ultranotei-core
+git clone https://github.com/TexasFoundation/txf-cannacoinz-core.git
+cd txf-cannacoinz-core
 mkdir build
 cd build
 cmake ..
 make
 ```
 
-The resulting executables can be found in `ultranotei-core/build/release/src`.
+The resulting executables can be found in `cannacoinz-core/build/release/src`.
