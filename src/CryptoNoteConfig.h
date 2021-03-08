@@ -134,8 +134,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT = 10000; // by default, bl
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT = 128; // by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
-const int      P2P_DEFAULT_PORT = 42000;
-const int      RPC_DEFAULT_PORT = 43000;
+const int      P2P_DEFAULT_PORT = 57777;
+const int      RPC_DEFAULT_PORT = 57778;
 
 
 /* P2P Network Configuration Section - This defines our current P2P network version
